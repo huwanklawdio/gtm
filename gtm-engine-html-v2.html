@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Free GTM Strategy Report - Find $2M+ in Hidden Revenue | HPPY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #007bff;
+        }
+        
+        .nav-cta {
+            background: #007bff;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-cta::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .nav-cta:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .nav-cta:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+        }
+        
+        /* Mobile Sticky CTA */
+        .mobile-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            z-index: 999;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .mobile-cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .spots-left {
+            background: rgba(255,255,255,0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        /* Credibility Bar */
+        .credibility-bar {
+            background: #f0f0f0;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .credibility-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .credibility-item {
+            font-size: 0.9rem;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .credibility-item strong {
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .credibility-item.highlight {
+            color: #007bff;
+            font-weight: 600;
+        }
+        
+        .report-counter {
+            font-weight: bold;
+            color: #007bff;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e6ecff 100%);
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 60%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0,123,255,0.05) 0%, transparent 70%);
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .value-badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            animation: slideInLeft 0.8s ease-out 0.2s both;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .hero h1 .highlight-number {
+            color: #007bff;
+            font-weight: 800;
+        }
+        
+        .gtm-definition {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-cta {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-cta:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+        }
+        
+        .trust-indicators {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .trust-indicator {
+            color: #666;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .live-viewers {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0,123,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #007bff;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: #28a745;
+            border-radius: 50%;
+            animation: blink 2s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        
+        .report-preview {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInRight 0.8s ease-out;
+        }
+        
+        .report-preview-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .preview-badge {
+            background: #e3f2fd;
+            color: #007bff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .score-section {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .score-gauge {
+            width: 120px;
+            height: 120px;
+            position: relative;
+        }
+        
+        .score-gauge-circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 10px solid #e0e0e0;
+            position: relative;
+        }
+        
+        .score-gauge-fill {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 10px solid #007bff;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            transform: rotate(45deg);
+            animation: fillGauge 1s ease-out 0.5s both;
+        }
+        
+        @keyframes fillGauge {
+            from { transform: rotate(45deg); }
+            to { transform: rotate(225deg); }
+        }
+        
+        .score-gauge-value {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .score-label {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .preview-insights {
+            flex: 1;
+        }
+        
+        .insight-item {
+            background: #f8f9fa;
+            padding: 0.75rem 1rem;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .insight-item.red { border-left: 3px solid #dc3545; }
+        .insight-item.yellow { border-left: 3px solid #ffc107; }
+        .insight-item.green { border-left: 3px solid #28a745; }
+        
+        /* How It Works Section */
+        .how-it-works {
+            background: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .how-it-works h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .steps-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .step {
+            flex: 1;
+            padding: 0 1rem;
+            position: relative;
+        }
+        
+        .step:not(:last-child)::after {
+            content: '→';
+            position: absolute;
+            right: -20px;
+            top: 60px;
+            font-size: 2rem;
+            color: #ddd;
+        }
+        
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            background: #e3f2fd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1rem;
+            color: #007bff;
+        }
+        
+        .step h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .step p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* What You'll Get Section */
+        .benefits {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+        
+        .benefits-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .benefits h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .benefit-visual {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .outcome-examples {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .outcome-examples h4 {
+            margin-bottom: 1rem;
+            color: #856404;
+        }
+        
+        .outcome-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+        
+        .outcome-number {
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .benefit-items {
+            list-style: none;
+        }
+        
+        .benefit-items li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            transition: transform 0.2s;
+        }
+        
+        .benefit-items li:hover {
+            transform: translateX(5px);
+        }
+        
+        .benefit-items li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .delivery-promise {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #e8f4f8;
+            border: 2px solid #007bff;
+            border-radius: 30px;
+            display: inline-block;
+            font-weight: bold;
+            color: #007bff;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        /* Comparison Table */
+        .comparison {
+            background: white;
+            padding: 4rem 0;
+        }
+        
+        .comparison h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .comparison-table {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            overflow-x: auto;
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .comparison-table th {
+            background: #f8f9fa;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .comparison-table .highlight-column {
+            background: #e8f4f8;
+            position: relative;
+        }
+        
+        .comparison-table .highlight-column::before {
+            content: 'BEST VALUE';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #007bff;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+        
+        .check { color: #28a745; font-weight: bold; }
+        .cross { color: #dc3545; font-weight: bold; }
+        
+        /* Social Proof Section */
+        .social-proof {
+            background: #f8f9fa;
+            padding: 4rem 0;
+            position: relative;
+        }
+        
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .testimonial {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .testimonial:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #555;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .testimonial-text::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -10px;
+            font-size: 3rem;
+            color: #007bff;
+            opacity: 0.3;
+        }
+        
+        .testimonial-highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .testimonial-role {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .testimonial-stars {
+            color: #ffc107;
+            margin-top: 0.5rem;
+        }
+        
+        .success-metrics {
+            background: #007bff;
+            color: white;
+            padding: 2rem;
+            border-radius: 40px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            box-shadow: 0 10px 30px rgba(0,123,255,0.3);
+        }
+        
+        .metric {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .metric-number {
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Form Section */
+        .form-section {
+            background: white;
+            padding: 4rem 0;
+            position: relative;
+        }
+        
+        .form-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+        
+        .form-wrapper {
+            background: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 3rem;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .form-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .form-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-header p {
+            color: #666;
+        }
+        
+        .form-trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .progress-bar {
+            margin-bottom: 2rem;
+        }
+        
+        .progress-bar-track {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .progress-bar-fill {
+            height: 100%;
+            background: #007bff;
+            border-radius: 4px;
+            width: 33%;
+            transition: width 0.5s ease;
+            position: relative;
+        }
+        
+        .progress-bar-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(
+                45deg,
+                rgba(255,255,255,0.2) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255,255,255,0.2) 50%,
+                rgba(255,255,255,0.2) 75%,
+                transparent 75%,
+                transparent
+            );
+            background-size: 1rem 1rem;
+            animation: progress-animation 1s linear infinite;
+        }
+        
+        @keyframes progress-animation {
+            0% { background-position: 0 0; }
+            100% { background-position: 1rem 1rem; }
+        }
+        
+        .progress-step {
+            color: #007bff;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .form-step {
+            animation: slideIn 0.5s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: white;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+        }
+        
+        .input-hint {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.8rem;
+            color: #666;
+            background: white;
+            padding: 0 0.5rem;
+        }
+        
+        .input-wrapper {
+            position: relative;
+        }
+        
+        .auto-detect-message {
+            position: absolute;
+            left: 0;
+            bottom: -1.5rem;
+            font-size: 0.8rem;
+            color: #28a745;
+            display: none;
+        }
+        
+        .continue-btn {
+            background: #007bff;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: 2rem auto 0;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .continue-btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+        }
+        
+        .continue-btn:active {
+            transform: translateY(0);
+        }
+        
+        /* Value Preview */
+        .value-preview {
+            background: #e8f4f8;
+            border: 1px solid #007bff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            display: none;
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        .value-preview h4 {
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+        
+        .value-preview ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .value-preview li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .value-preview li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #007bff;
+        }
+        
+        /* Live Activity Feed */
+        .activity-feed {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .activity-feed h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        
+        .activity-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            animation: slideInRight 0.5s ease-out;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        
+        .activity-item:nth-child(2) { animation-delay: 0.1s; }
+        .activity-item:nth-child(3) { animation-delay: 0.2s; }
+        .activity-item:nth-child(4) { animation-delay: 0.3s; }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .activity-dot {
+            width: 10px;
+            height: 10px;
+            background: #28a745;
+            border-radius: 50%;
+            margin-right: 1rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        .activity-text {
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .activity-text strong {
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .activity-counter {
+            background: #e8f4f8;
+            color: #007bff;
+            padding: 0.75rem;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        /* Trust Elements */
+        .trust-elements {
+            text-align: center;
+            margin-top: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        /* Urgency Banner */
+        .urgency-banner {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 40px;
+            padding: 1.5rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 3rem auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .urgency-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,193,7,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .urgency-banner strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .slots-remaining {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        .countdown {
+            font-family: monospace;
+            font-size: 1.2rem;
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+        
+        .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .faq h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .faq-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .faq-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        
+        .faq-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .faq-link {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .faq-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s;
+        }
+        
+        .faq-link a:hover {
+            gap: 1rem;
+        }
+        
+        /* Confirmation State */
+        .confirmation-preview {
+            background: #f0f9ff;
+            padding: 4rem 0;
+            text-align: center;
+            display: none;
+        }
+        
+        .confirmation-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .confirmation-content h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .progress-steps {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .progress-step-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .progress-step-item.completed {
+            color: #28a745;
+        }
+        
+        .progress-step-item.active {
+            color: #007bff;
+            font-weight: bold;
+        }
+        
+        .progress-step-item.pending {
+            color: #999;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .mobile-cta {
+                display: block;
+            }
+            
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .form-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .activity-feed {
+                position: static;
+                margin-top: 2rem;
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .success-metrics {
+                flex-direction: column;
+            }
+            
+            .credibility-items {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .steps-container {
+                flex-direction: column;
+            }
+            
+            .step:not(:last-child)::after {
+                content: '↓';
+                right: auto;
+                top: auto;
+                bottom: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .comparison-table {
+                overflow-x: scroll;
+            }
+            
+            body {
+                padding-bottom: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">HPPY</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#form" class="nav-cta">Get GTM Report</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-cta">
+        <a href="#form">
+            Get My Report → 
+            <span class="spots-left">12 left today</span>
+        </a>
+    </div>
+
+    <!-- Credibility Bar -->
+    <div class="credibility-bar">
+        <div class="credibility-items">
+            <span class="credibility-item">
+                <span class="report-counter">Report #486</span> being generated now...
+            </span>
+            <span class="credibility-item">
+                Trusted by teams at <strong>[Company Logos]</strong>
+            </span>
+            <span class="credibility-item">
+                <strong>4.8★</strong> from 500+ Growth Leaders
+            </span>
+            <span class="credibility-item highlight">
+                As seen in TechCrunch & Forbes
+            </span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="value-badge">Valued at $15,000</span>
+                <h1>Find the <span class="highlight-number">$2M+</span> in Revenue You're Leaving on the Table</h1>
+                <p class="gtm-definition">Go-To-Market (GTM) Analysis in 15 Minutes</p>
+                <p class="hero-subtitle">AI-powered analysis of your business reveals exactly which channels, strategies, and fixes will unlock growth—delivered in 15 minutes, worth $15K in consultant fees.</p>
+                <a href="#form" class="hero-cta">Get My Growth Roadmap</a>
+                <div class="trust-indicators">
+                    <span class="trust-indicator">🔒 No credit card required</span>
+                    <span class="trust-indicator">✓ Actionable insights guaranteed</span>
+                </div>
+                <div class="live-viewers">
+                    <span class="live-dot"></span>
+                    14 people viewing this page now
+                </div>
+            </div>
+            <div class="report-preview">
+                <div class="report-preview-header">
+                    <h3>Your GTM Report Preview</h3>
+                    <span class="preview-badge">Sample</span>
+                </div>
+                <div class="score-section">
+                    <div class="score-gauge">
+                        <div class="score-gauge-circle">
+                            <div class="score-gauge-fill"></div>
+                            <div class="score-gauge-value">73</div>
+                            <span class="score-label">GTM Score</span>
+                        </div>
+                    </div>
+                    <div class="preview-insights">
+                        <div class="insight-item red">
+                            <span>🔴</span> No email list = $47K/mo lost
+                        </div>
+                        <div class="insight-item yellow">
+                            <span>🟡</span> SEO traffic 234% below potential
+                        </div>
+                        <div class="insight-item green">
+                            <span>🟢</span> Strong product-market fit signals
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="benefits-container">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">📝</div>
+                    <h3>Share Basic Info</h3>
+                    <p>30 seconds to tell us about your business</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">🤖</div>
+                    <h3>AI Analyzes</h3>
+                    <p>50+ growth factors examined instantly</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">📊</div>
+                    <h3>Get Your Roadmap</h3>
+                    <p>Personalized GTM strategy in 15 minutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Get Section -->
+    <section class="benefits">
+        <div class="benefits-container">
+            <h2>Your Personalized GTM Report Includes:</h2>
+            <div class="benefits-grid">
+                <div class="benefit-visual">
+                    <div class="outcome-examples">
+                        <h4>Real Examples from Recent Reports:</h4>
+                        <div class="outcome-item">
+                            <span>"Your SEO could drive <span class="outcome-number">234%</span> more traffic in 90 days"</span>
+                        </div>
+                        <div class="outcome-item">
+                            <span>"You're losing <span class="outcome-number">$47K/month</span> by ignoring LinkedIn"</span>
+                        </div>
+                        <div class="outcome-item">
+                            <span>"Your email list should be <span class="outcome-number">3x larger</span> based on traffic"</span>
+                        </div>
+                    </div>
+                    <h3 style="text-align: center; margin-bottom: 1.5rem;">GTM Insight Report Components</h3>
+                    <div style="display: flex; justify-content: space-around; margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <div class="score-gauge" style="width: 80px; height: 80px; margin-bottom: 0.5rem;">
+                                <div class="score-gauge-circle" style="border-width: 6px;">
+                                    <div class="score-gauge-fill" style="border-width: 6px; width: 80px; height: 80px;"></div>
+                                    <div class="score-gauge-value" style="font-size: 1.5rem;">73</div>
+                                </div>
+                            </div>
+                            <p style="font-size: 0.9rem;">GTM Score</p>
+                        </div>
+                        <div style="background: white; border: 1px solid #ddd; border-radius: 5px; padding: 1rem; width: 150px;">
+                            <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem;">Channel Performance</h4>
+                            <div style="background: #28a745; height: 15px; border-radius: 3px; margin: 5px 0; width: 70%;"></div>
+                            <div style="background: #ffc107; height: 15px; border-radius: 3px; margin: 5px 0; width: 50%;"></div>
+                            <div style="background: #dc3545; height: 15px; border-radius: 3px; margin: 5px 0; width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="benefit-items">
+                        <li>See exactly why competitors are growing 3x faster</li>
+                        <li>Channel-by-channel optimization roadmap with ROI projections</li>
+                        <li>Critical red flags that could kill your growth (with fixes)</li>
+                        <li>90-day prioritized action plan with quick wins first</li>
+                        <li>PMF score based on your specific market dynamics</li>
+                        <li>Budget allocation to maximize growth per dollar</li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <span class="delivery-promise">⏱️ Delivered to your inbox in 15-20 minutes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison">
+        <div class="comparison-table">
+            <h2>Compare Your Options</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Approach</th>
+                        <th>Cost</th>
+                        <th>Time</th>
+                        <th>Personalized</th>
+                        <th>Actionable</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DIY Research</td>
+                        <td>Free</td>
+                        <td>40+ hours</td>
+                        <td class="cross">✗</td>
+                        <td class="cross">✗</td>
+                    </tr>
+                    <tr>
+                        <td>Hire Consultant</td>
+                        <td>$15K+</td>
+                        <td>4-6 weeks</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                    </tr>
+                    <tr class="highlight-column">
+                        <td><strong>HPPY GTM Report</strong></td>
+                        <td><strong>Free</strong></td>
+                        <td><strong>15 minutes</strong></td>
+                        <td class="check"><strong>✓</strong></td>
+                        <td class="check"><strong>✓</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="benefits-container">
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">"The GTM report identified <span class="testimonial-highlight">$2M in untapped revenue</span> from channels we completely overlooked."</p>
+                    <p class="testimonial-author">Sarah Chen</p>
+                    <p class="testimonial-role">VP Marketing, TechCo (B2B SaaS)</p>
+                    <p class="testimonial-stars">★★★★★</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Went from <span class="testimonial-highlight">43 to 78 GTM score</span> in 90 days following the action plan. Best ROI on free advice ever!"</p>
+                    <p class="testimonial-author">Marcus Johnson</p>
+                    <p class="testimonial-role">Founder, StyleDirect (B2C DTC)</p>
+                    <p class="testimonial-stars">★★★★★</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"The red flags saved us from <span class="testimonial-highlight">wasting $50K</span> on the wrong channels. Invaluable insights!"</p>
+                    <p class="testimonial-author">Amanda Torres</p>
+                    <p class="testimonial-role">CMO, LocalMart (Marketplace)</p>
+                    <p class="testimonial-stars">★★★★★</p>
+                </div>
+            </div>
+            <div class="success-metrics">
+                <div class="metric">
+                    <span class="metric-number">$47M+</span>
+                    Hidden Revenue Found
+                </div>
+                <div class="metric">
+                    <span class="metric-number">3.2x</span>
+                    Average Growth After Report
+                </div>
+                <div class="metric">
+                    <span class="metric-number">15 Min</span>
+                    To Save $50K in Wasted Spend
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section" id="form">
+        <div class="form-container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Tell Us About Your Business</h2>
+                </div>
+                
+                <div class="form-trust-badges">
+                    <span class="trust-badge">🔒 Your data is secure</span>
+                    <span class="trust-badge">📊 Report ready in 15 min</span>
+                    <span class="trust-badge">🎁 Free expert review this week</span>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress-bar-track">
+                        <div class="progress-bar-fill"></div>
+                    </div>
+                    <span class="progress-step">Step 1 of 3: Basic Information</span>
+                </div>
+
+                <form class="form-step">
+                    <div class="form-group">
+                        <label>Company Name *</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="company-name" required>
+                            <span class="input-hint">For report personalization</span>
+                            <span class="auto-detect-message">Analyzing...</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Website URL *</label>
+                        <div class="input-wrapper">
+                            <input type="url" id="website-url" required placeholder="https://yourcompany.com">
+                            <span class="input-hint">We'll analyze your tech stack</span>
+                            <span class="auto-detect-message">Found your tech stack!</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Business Type *</label>
+                        <select required>
+                            <option value="">Select your business type</option>
+                            <option>B2B SaaS</option>
+                            <option>B2C DTC</option>
+                            <option>Marketplace</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Your Email Address *</label>
+                        <div class="input-wrapper">
+                            <input type="email" required>
+                            <span class="input-hint">Join 500+ growth leaders</span>
+                        </div>
+                    </div>
+                    
+                    <div class="value-preview" id="value-preview">
+                        <h4>✨ Initial scan complete! We found 3 quick wins:</h4>
+                        <ul>
+                            <li>Your website loads 40% slower than competitors</li>
+                            <li>Missing key SEO opportunities on 12 pages</li>
+                            <li>No retargeting pixels detected</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic;">Complete the form to see all insights...</p>
+                    </div>
+                    
+                    <button type="button" class="continue-btn">Continue to Step 2</button>
+                </form>
+                
+                <div class="trust-elements">
+                    <span>🔒 Bank-level encryption</span>
+                    <span>🚫 No spam, ever</span>
+                    <span>⏱️ 15-20 minute delivery</span>
+                </div>
+            </div>
+            
+            <div class="activity-feed">
+                <h3>Live Activity</h3>
+                <div class="activity-item">
+                    <div class="activity-dot"></div>
+                    <div class="activity-text"><strong>Sarah from TechCo</strong> just received her report (2 min ago)</div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-dot"></div>
+                    <div class="activity-text"><strong>B2B SaaS in Austin</strong> found $125K opportunity (5 min ago)</div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-dot"></div>
+                    <div class="activity-text"><strong>DTC brand</strong> improved GTM score by 35 points (1 hour ago)</div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-dot"></div>
+                    <div class="activity-text"><strong>Marketplace startup</strong> unlocked 3 new channels (2 hours ago)</div>
+                </div>
+                <div class="activity-counter">485 reports generated this week</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Banner -->
+    <div class="urgency-banner">
+        <strong>🎁 This Week Only: Free 30-min Expert Review Call (Worth $500)</strong>
+        <span>Due to hand-review process, only <span class="slots-remaining">12 spots</span> remaining today</span>
+        <br>
+        <span style="font-size: 0.9rem; margin-top: 0.5rem; display: inline-block;">
+            Next available slot: 2:30 PM EST | Expert review bonus expires in: <span class="countdown">14:32</span>
+        </span>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Is this really free? What's the catch?</h3>
+                    <p>Yes, it's 100% free. We offer paid implementation services after, but the report itself has no strings attached. Many users implement the strategies themselves.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How is this different from asking ChatGPT?</h3>
+                    <p>Our proprietary GTM scoring algorithm analyzes 50+ factors, compares you to 10,000+ companies, and our experts review each report. Generic AI can't match this specificity.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I'm pre-revenue?</h3>
+                    <p>Perfect! The report helps you avoid costly mistakes before you scale. Early-stage insights are often the most valuable—we'll show you exactly where to focus first.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Will you spam me after?</h3>
+                    <p>Never. You'll get your report and occasional helpful GTM tips (once a week max). Unsubscribe anytime with one click. We hate spam too.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Who reviews my report?</h3>
+                    <p>Our team of GTM experts with 100+ years combined experience. They've helped scale companies from $0 to $100M+ and add personalized insights the AI might miss.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I speak with a GTM expert after?</h3>
+                    <p>Yes! Every report includes the option to book a free 30-min strategy call. This week, we're including this as a bonus (usually $500).</p>
+                </div>
+            </div>
+            <div class="faq-link">
+                <a href="#">See all FAQs →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Questions? Contact us at gtminsight@hppyhour.agency</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">© 2025 HPPY. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Dynamic report counter
+        let reportNumber = 486;
+        setInterval(() => {
+            reportNumber++;
+            document.querySelector('.report-counter').textContent = `Report #${reportNumber}`;
+        }, 45000); // Increment every 45 seconds
+
+        // Live viewers count
+        let viewers = 14;
+        setInterval(() => {
+            viewers = Math.max(8, Math.min(25, viewers + Math.floor(Math.random() * 5 - 2)));
+            document.querySelector('.live-viewers').innerHTML = `<span class="live-dot"></span>${viewers} people viewing this page now`;
+        }, 30000);
+
+        // Form interactions
+        const companyInput = document.getElementById('company-name');
+        const urlInput = document.getElementById('website-url');
+        const valuePreview = document.getElementById('value-preview');
+
+        // Simulate auto-detection
+        companyInput.addEventListener('input', function() {
+            if (this.value.length > 3) {
+                const message = this.parentElement.querySelector('.auto-detect-message');
+                message.style.display = 'block';
+                setTimeout(() => {
+                    message.style.display = 'none';
+                }, 2000);
+            }
+        });
+
+        urlInput.addEventListener('blur', function() {
+            if (this.value.includes('http')) {
+                const message = this.parentElement.querySelector('.auto-detect-message');
+                message.style.display = 'block';
+                
+                // Show value preview after URL input
+                setTimeout(() => {
+                    valuePreview.style.display = 'block';
+                }, 1500);
+            }
+        });
+
+        // Countdown timer
+        let minutes = 14;
+        let seconds = 32;
+        
+        setInterval(() => {
+            seconds--;
+            if (seconds < 0) {
+                minutes--;
+                seconds = 59;
+            }
+            if (minutes < 0) {
+                minutes = 14;
+                seconds = 32;
+            }
+            document.querySelector('.countdown').textContent = 
+                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }, 1000);
+
+        // Slots remaining
+        let slots = 12;
+        setInterval(() => {
+            if (Math.random() > 0.7 && slots > 3) {
+                slots--;
+                document.querySelector('.slots-remaining').textContent = `${slots} spots`;
+                document.querySelector('.spots-left').textContent = `${slots} left today`;
+            }
+        }, 60000); // Check every minute
+
+        // Form step simulation
+        document.querySelector('.continue-btn').addEventListener('click', function() {
+            alert('This is a demo. In production, this would progress to Step 2 with dynamic testimonials and channel recommendations based on your business type.');
+        });
+
+        // Exit intent (simplified for demo)
+        let exitIntentShown = false;
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0 && !exitIntentShown) {
+                exitIntentShown = true;
+                // In production, show exit intent popup
+                console.log('Exit intent triggered - would show popup');
+            }
+        });
+
+        // Add new activity items periodically
+        const activityTexts = [
+            '<strong>Enterprise SaaS</strong> discovered untapped enterprise channel',
+            '<strong>D2C fashion brand</strong> increased conversion by 47%',
+            '<strong>B2B in NYC</strong> just downloaded their report',
+            '<strong>Marketplace app</strong> found $2M revenue opportunity',
+            '<strong>SaaS startup</strong> improved GTM score to 82'
+        ];
+
+        let activityIndex = 0;
+        setInterval(() => {
+            // This would be replaced with real WebSocket data in production
+            console.
